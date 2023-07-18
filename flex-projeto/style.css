@@ -245,6 +245,51 @@ footer .footer{
     color: #fff;
 }
 
+/* Efeito hover para os links da lista de itens de menu */
+.list-items li a {
+    transition: color 0.6s ease; /* Adicione a propriedade transition */
+}
+
+.list-items li a:hover {
+    color: #F88E44; /* Substitua pela cor desejada */
+    
+}
+
+/* Efeito hover para os botões */
+.btn {
+    transition: background-color 0.6s ease, color 0.6s ease; /* Adicione a propriedade transition */
+}
+
+.btn:hover {
+    background-color: #F88E44; 
+    color: #FFFFFF; 
+}
+
+/* Efeito hover para as imagens */
+div img {
+    transition: opacity 0.6s ease; /* Adicione a propriedade transition */
+}
+
+/* Efeito hover para os itens de serviço */
+.item-servicos {
+    transition: transform 0.6s ease; /* Adicione a propriedade transition */
+}
+
+.item-servicos:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do item ao passar o mouse */
+    
+}
+
+header {
+    background-color: #122A57;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+
 /* mobile */
 
 @media(max-width:992px){
