@@ -289,3 +289,95 @@ header {
     right: 0;
     z-index: 9999;
   }
+
+/* Responsividade */
+
+/* Telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    header .menu {
+        align-items: flex-start;
+    }
+
+    .list-items {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .list-items li {
+        margin-bottom: 10px;
+    }
+
+    .apresentacao {
+        text-align: center;
+    }
+
+    .texto-apresentacao h1 {
+        font-size: 32px;
+    }
+
+    #quem-somos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #quem-somos img {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .list-servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-servicos {
+        margin-bottom: 20px;
+    }
+
+    #planos .list-planos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-plano {
+        margin: 20px 0;
+        max-width: 90%;
+    }
+}
+
+/* Telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    .texto-apresentacao h1 {
+        font-size: 24px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #quem-somos p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    #servicos h2,
+    #planos h2 {
+        font-size: 24px;
+    }
+
+    .item-plano h3 {
+        font-size: 18px;
+    }
+
+    .item-plano ul li {
+        font-size: 12px;
+    }
+}
